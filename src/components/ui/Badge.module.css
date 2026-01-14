@@ -1,0 +1,44 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    white-space: nowrap;
+    background: color-mix(in srgb, var(--badge-color) 15%, transparent);
+    color: var(--badge-color);
+    border: 1px solid color-mix(in srgb, var(--badge-color) 30%, transparent);
+}
+
+/* Level-specific colors */
+.excellent {
+    --badge-color: var(--color-excellent);
+}
+
+.good {
+    --badge-color: var(--color-good);
+}
+
+.needsImprovement {
+    --badge-color: var(--color-needs-improvement);
+}
+
+.critical {
+    --badge-color: var(--color-critical);
+}
+
+/* Sizes */
+.sm {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+}
+
+.md {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+}
+
+.lg {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-base);
+}

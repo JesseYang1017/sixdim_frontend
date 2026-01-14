@@ -1,0 +1,130 @@
+.main {
+    min-height: 100vh;
+    padding: var(--spacing-xl) var(--spacing-md);
+    padding-bottom: var(--spacing-3xl);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.backLink {
+    display: inline-block;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-lg);
+    transition: color var(--transition-fast);
+}
+
+.backLink:hover {
+    color: var(--color-primary);
+}
+
+.loading {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    color: var(--color-text-secondary);
+}
+
+.noResults {
+    text-align: center;
+}
+
+.noResults h2 {
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.noResults p {
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--spacing-lg) 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.timestamp {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+.section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.sectionTitle {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.dimensionGrid {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+
+.nextStepsList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-lg) 0;
+}
+
+.nextStep {
+    padding: var(--spacing-sm) 0;
+    padding-left: var(--spacing-xl);
+    position: relative;
+    color: var(--color-text-secondary);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.nextStep:last-child {
+    border-bottom: none;
+}
+
+.nextStep::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.expectedOutcome {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    background: var(--color-border-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin: 0;
+}
+
+.expectedOutcome strong {
+    color: var(--color-text-primary);
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-2xl);
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: var(--font-size-3xl);
+    }
+}

@@ -1,0 +1,600 @@
+{
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-05",
+    "testTypes": {
+        "matchmaking": {
+            "id": "matchmaking",
+            "name": "相亲六维测试",
+            "nameEn": "Matchmaking Six-Dimension Test",
+            "description": "评估被测者在相亲前的准备程度",
+            "dimensions": {
+                "D1": {
+                    "id": "D1",
+                    "name": "自我认知清晰度",
+                    "nameEn": "Self-Awareness Clarity",
+                    "coreTheme": "了解自己的需求、优势、劣势",
+                    "subThemes": [
+                        "自我了解",
+                        "择偶标准明确",
+                        "现实基础评估",
+                        "成长潜力"
+                    ],
+                    "questions": [
+                        {
+                            "id": "matchmaking_D1_Q1",
+                            "text": "我清楚地知道自己想要什么样的伴侣",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "matchmaking_D1_Q2",
+                            "text": "我对自己的优点和缺点有清晰的认识",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "matchmaking_D1_Q3",
+                            "text": "我了解自己的婚恋需求和底线",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "matchmaking_D1_Q4",
+                            "text": "我对自己的婚恋市场价值有客观评估",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "matchmaking_D1_Q5",
+                            "text": "我知道自己在相亲中的核心优势",
+                            "reverse": false,
+                            "order": 5
+                        },
+                        {
+                            "id": "matchmaking_D1_Q6",
+                            "text": "我认为\"门当户对\"的条件匹配是产生爱情的前提",
+                            "reverse": false,
+                            "order": 6
+                        }
+                    ]
+                },
+                "D2": {
+                    "id": "D2",
+                    "name": "情绪管理力",
+                    "nameEn": "Emotional Management",
+                    "coreTheme": "处理情感压力、原生影响、保持情绪稳定",
+                    "subThemes": [
+                        "情绪稳定性",
+                        "情伤疗愈",
+                        "安全感",
+                        "催婚压力应对"
+                    ],
+                    "questions": [
+                        {
+                            "id": "matchmaking_D2_Q1",
+                            "text": "我能够很好地管理相亲过程中的焦虑情绪",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "matchmaking_D2_Q2",
+                            "text": "过去的感情经历不会影响我开启新关系",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "matchmaking_D2_Q3",
+                            "text": "面对催婚压力，我能保持平和心态",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "matchmaking_D2_Q4",
+                            "text": "在相亲中遇到不合适的人，我能礼貌结束",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "matchmaking_D2_Q5",
+                            "text": "我对建立亲密关系有信心",
+                            "reverse": false,
+                            "order": 5
+                        }
+                    ]
+                },
+                "D3": {
+                    "id": "D3",
+                    "name": "外在形象力",
+                    "nameEn": "External Image",
+                    "coreTheme": "第一印象构建、吸引力打造",
+                    "subThemes": [
+                        "形象管理",
+                        "社交状态",
+                        "行为表现",
+                        "第一印象"
+                    ],
+                    "questions": [
+                        {
+                            "id": "matchmaking_D3_Q1",
+                            "text": "我注重自己的外在形象管理",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "matchmaking_D3_Q2",
+                            "text": "我在社交场合表现得体、自信",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "matchmaking_D3_Q3",
+                            "text": "我能够给对方留下良好的第一印象",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "matchmaking_D3_Q4",
+                            "text": "我不存在社交回避或社恐问题",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "matchmaking_D3_Q5",
+                            "text": "我知道如何在相亲中展现自己的魅力",
+                            "reverse": false,
+                            "order": 5
+                        }
+                    ]
+                },
+                "D4": {
+                    "id": "D4",
+                    "name": "沟通表达力",
+                    "nameEn": "Communication Skills",
+                    "coreTheme": "有效沟通、建立连接的能力",
+                    "subThemes": [
+                        "沟通技巧",
+                        "情感表达",
+                        "话题掌控",
+                        "可得性平衡",
+                        "倾听理解"
+                    ],
+                    "questions": [
+                        {
+                            "id": "matchmaking_D4_Q1",
+                            "text": "我擅长与陌生人建立初步连接",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "matchmaking_D4_Q2",
+                            "text": "我能够自然地表达自己的兴趣和想法",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "matchmaking_D4_Q3",
+                            "text": "我知道如何在相亲中进行有效沟通",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "matchmaking_D4_Q4",
+                            "text": "我能够把握沟通的度和节奏",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "matchmaking_D4_Q5",
+                            "text": "我懂得恰到好处的释放好感，不过于被动或激进",
+                            "reverse": false,
+                            "order": 5
+                        },
+                        {
+                            "id": "matchmaking_D4_Q6",
+                            "text": "我能够耐心倾听对方的表达",
+                            "reverse": false,
+                            "order": 6
+                        },
+                        {
+                            "id": "matchmaking_D4_Q7",
+                            "text": "我善于开启新话题，保持沟通顺畅",
+                            "reverse": false,
+                            "order": 7
+                        }
+                    ]
+                },
+                "D5": {
+                    "id": "D5",
+                    "name": "择偶决策力",
+                    "nameEn": "Partner Selection Decision-Making",
+                    "coreTheme": "选择标准、判断力、决策效率",
+                    "subThemes": [
+                        "标准合理性",
+                        "价值匹配",
+                        "判断效率",
+                        "选择行动力"
+                    ],
+                    "questions": [
+                        {
+                            "id": "matchmaking_D5_Q1",
+                            "text": "我的择偶标准是合理且现实的",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "matchmaking_D5_Q2",
+                            "text": "我能够快速判断一个人是否适合我",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "matchmaking_D5_Q3",
+                            "text": "我不会在选择中犹豫不决或错过机会",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "matchmaking_D5_Q4",
+                            "text": "我懂得取舍，做出理性的择偶决策",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "matchmaking_D5_Q5",
+                            "text": "我能够在众多选择中做出最优决策",
+                            "reverse": false,
+                            "order": 5
+                        },
+                        {
+                            "id": "matchmaking_D5_Q6",
+                            "text": "我能够不受外力影响坚持自己的选择",
+                            "reverse": false,
+                            "order": 6
+                        }
+                    ]
+                },
+                "D6": {
+                    "id": "D6",
+                    "name": "关系推进力",
+                    "nameEn": "Relationship Advancement",
+                    "coreTheme": "推进关系、进度管理、关键时刻把握",
+                    "subThemes": [
+                        "推进节奏",
+                        "关键节点",
+                        "进度管理",
+                        "关系升级",
+                        "执行力"
+                    ],
+                    "questions": [
+                        {
+                            "id": "matchmaking_D6_Q1",
+                            "text": "我知道如何推进从相亲到恋爱的关系",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "matchmaking_D6_Q2",
+                            "text": "我能够把握关系发展的节奏和时机",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "matchmaking_D6_Q3",
+                            "text": "我懂得在关键节点做出正确决策",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "matchmaking_D6_Q4",
+                            "text": "我不会推进过快或过慢",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "matchmaking_D6_Q5",
+                            "text": "我能够有效把握关系进度",
+                            "reverse": false,
+                            "order": 5
+                        },
+                        {
+                            "id": "matchmaking_D6_Q6",
+                            "text": "我能够主动邀请约会将关系推进",
+                            "reverse": false,
+                            "order": 6
+                        },
+                        {
+                            "id": "matchmaking_D6_Q7",
+                            "text": "我愿意投入时间、精力或物质资源来安排约会",
+                            "reverse": false,
+                            "order": 7
+                        }
+                    ]
+                }
+            }
+        },
+        "dating": {
+            "id": "dating",
+            "name": "恋爱六维测试",
+            "nameEn": "Dating Relationship Six-Dimension Test",
+            "description": "评估被测者在恋爱关系中的综合表现",
+            "dimensions": {
+                "D1": {
+                    "id": "D1",
+                    "name": "关系认知深度",
+                    "nameEn": "Relationship Cognition Depth",
+                    "coreTheme": "对恋爱关系的理解和期待",
+                    "subThemes": [
+                        "关系认知",
+                        "期待管理",
+                        "承诺认知",
+                        "亲密程度"
+                    ],
+                    "questions": [
+                        {
+                            "id": "dating_D1_Q1",
+                            "text": "我对理想的恋爱关系有清晰的认知",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "dating_D1_Q2",
+                            "text": "我的恋爱期待是现实且合理的",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "dating_D1_Q3",
+                            "text": "我了解自己在恋爱中想要的是什么",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "dating_D1_Q4",
+                            "text": "我对恋爱关系的意愿、行动、持续度有清晰的思考",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "dating_D1_Q5",
+                            "text": "我知道如何建立健康的亲密关系",
+                            "reverse": false,
+                            "order": 5
+                        }
+                    ]
+                },
+                "D2": {
+                    "id": "D2",
+                    "name": "情感联结力",
+                    "nameEn": "Emotional Bonding",
+                    "coreTheme": "建立情感深度、信任、亲密感",
+                    "subThemes": [
+                        "情感深度",
+                        "信任构建",
+                        "亲密表达",
+                        "情感支持"
+                    ],
+                    "questions": [
+                        {
+                            "id": "dating_D2_Q1",
+                            "text": "我擅长与伴侣建立深度的情感连接",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "dating_D2_Q2",
+                            "text": "我能够建立信任关系",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "dating_D2_Q3",
+                            "text": "我能够维护信任关系",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "dating_D2_Q4",
+                            "text": "我懂得如何表达和接受爱",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "dating_D2_Q5",
+                            "text": "我能够在恋爱中提供情感支持",
+                            "reverse": false,
+                            "order": 5
+                        },
+                        {
+                            "id": "dating_D2_Q6",
+                            "text": "我能够与伴侣保持情感同步",
+                            "reverse": false,
+                            "order": 6
+                        }
+                    ]
+                },
+                "D3": {
+                    "id": "D3",
+                    "name": "沟通效能",
+                    "nameEn": "Communication Effectiveness",
+                    "coreTheme": "深度沟通、冲突处理、需求表达",
+                    "subThemes": [
+                        "深度沟通",
+                        "冲突解决",
+                        "需求表达",
+                        "倾听理解"
+                    ],
+                    "questions": [
+                        {
+                            "id": "dating_D3_Q1",
+                            "text": "我能够与伴侣进行深度有效的沟通",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "dating_D3_Q2",
+                            "text": "我擅长处理恋爱中的分歧和冲突",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "dating_D3_Q3",
+                            "text": "我能够清晰表达自己的需求和感受",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "dating_D3_Q4",
+                            "text": "我懂得倾听和理解伴侣的想法",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "dating_D3_Q5",
+                            "text": "我能够在沟通中找到双赢方案",
+                            "reverse": false,
+                            "order": 5
+                        }
+                    ]
+                },
+                "D4": {
+                    "id": "D4",
+                    "name": "情绪价值",
+                    "nameEn": "Emotional Value",
+                    "coreTheme": "提供情绪支持、营造积极氛围",
+                    "subThemes": [
+                        "情绪支持",
+                        "积极影响",
+                        "共情能力",
+                        "情绪稳定"
+                    ],
+                    "questions": [
+                        {
+                            "id": "dating_D4_Q1",
+                            "text": "我能够为恋爱关系提供积极的情绪价值",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "dating_D4_Q2",
+                            "text": "我懂得如何营造轻松愉快的相处氛围",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "dating_D4_Q3",
+                            "text": "我能够理解并回应伴侣的情绪",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "dating_D4_Q4",
+                            "text": "我在恋爱中情绪稳定，不会忽冷忽热",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "dating_D4_Q5",
+                            "text": "我能够让伴侣感受到被理解和支持",
+                            "reverse": false,
+                            "order": 5
+                        }
+                    ]
+                },
+                "D5": {
+                    "id": "D5",
+                    "name": "成长同步性",
+                    "nameEn": "Growth Synchronization",
+                    "coreTheme": "共同成长、价值观契合、未来规划",
+                    "subThemes": [
+                        "价值观匹配",
+                        "成长速度",
+                        "未来规划",
+                        "合作适配"
+                    ],
+                    "questions": [
+                        {
+                            "id": "dating_D5_Q1",
+                            "text": "我和伴侣在价值观上高度契合",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "dating_D5_Q2",
+                            "text": "我们能够共同成长、互相支持",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "dating_D5_Q3",
+                            "text": "我们对未来有共同的规划和期待",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "dating_D5_Q4",
+                            "text": "我们在生活目标上保持一致",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "dating_D5_Q5",
+                            "text": "我们能够很好地合作解决生活问题",
+                            "reverse": false,
+                            "order": 5
+                        }
+                    ]
+                },
+                "D6": {
+                    "id": "D6",
+                    "name": "关系维护力",
+                    "nameEn": "Relationship Maintenance",
+                    "coreTheme": "长期维护、风险管控、关系保鲜",
+                    "subThemes": [
+                        "长期维系",
+                        "风险管控",
+                        "关系保鲜",
+                        "策略应对"
+                    ],
+                    "questions": [
+                        {
+                            "id": "dating_D6_Q1",
+                            "text": "我懂得如何长期维护恋爱关系",
+                            "reverse": false,
+                            "order": 1
+                        },
+                        {
+                            "id": "dating_D6_Q2",
+                            "text": "我能够识别关系风险",
+                            "reverse": false,
+                            "order": 2
+                        },
+                        {
+                            "id": "dating_D6_Q3",
+                            "text": "我能够管控关系风险",
+                            "reverse": false,
+                            "order": 3
+                        },
+                        {
+                            "id": "dating_D6_Q4",
+                            "text": "我擅长保持关系的新鲜感和活力",
+                            "reverse": false,
+                            "order": 4
+                        },
+                        {
+                            "id": "dating_D6_Q5",
+                            "text": "我知道如何应对关系中的挑战",
+                            "reverse": false,
+                            "order": 5
+                        },
+                        {
+                            "id": "dating_D6_Q6",
+                            "text": "我能够在困难时期坚持和维护关系",
+                            "reverse": false,
+                            "order": 6
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
