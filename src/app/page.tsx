@@ -31,19 +31,21 @@ export default function HomePage() {
             </Card>
           </Link>
 
-          <Card padding="lg" className={styles.comingSoon}>
-            <div className={styles.cardContent}>
-              <div className={styles.cardIcon}>🐱</div>
-              <h2 className={styles.cardTitle}>动物性格测试</h2>
-              <p className={styles.cardDescription}>
-                探索你的性格类型，了解自己的人际交往风格、
-                职业倾向和成长方向。
-              </p>
-              <div className={styles.cardMeta}>
-                <span className={styles.badgeSecondary}>即将上线</span>
+          <a href="https://animalpersonality-production.up.railway.app/" target="_blank" rel="noopener noreferrer" className={styles.link}>
+            <Card clickable padding="lg">
+              <div className={styles.cardContent}>
+                <div className={styles.cardIcon}>🐱</div>
+                <h2 className={styles.cardTitle}>动物性格测试</h2>
+                <p className={styles.cardDescription}>
+                  探索你的性格类型，了解自己的人际交往风格、
+                  职业倾向和成长方向。
+                </p>
+                <div className={styles.cardMeta}>
+                  <span className={styles.badge}>性格测试</span>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </a>
         </div>
       </div>
     </main>

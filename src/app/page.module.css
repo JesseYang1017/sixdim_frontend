@@ -41,6 +41,11 @@
   text-decoration: none;
   color: inherit;
   display: block;
+  height: 100%;
+}
+
+.link>* {
+  height: 100%;
 }
 
 .cardContent {

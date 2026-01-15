@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/sixdim',
+  basePath: '/survey',
   images: {
     unoptimized: true,
   },
