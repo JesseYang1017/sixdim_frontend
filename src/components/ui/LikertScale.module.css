@@ -6,8 +6,10 @@
 
 .scale {
     display: flex;
-    justify-content: space-between;
-    gap: var(--spacing-sm);
+    justify-content: center;
+    gap: var(--spacing-xs);
+    /* Smaller gap on mobile */
+    width: 100%;
 }
 
 .option {
@@ -28,32 +30,37 @@
 }
 
 .circle {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    /* Smaller on mobile */
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: var(--radius-full);
-    border: 2px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    border: var(--border-width) solid var(--color-border);
     background: var(--color-surface);
-    font-size: var(--font-size-lg);
-    font-weight: 600;
+    font-size: var(--font-size-base);
+    /* Smaller font on mobile */
+    font-weight: 700;
     color: var(--color-text-secondary);
     transition: all var(--transition-fast);
 }
 
 .option:hover:not(:disabled) .circle {
-    border-color: var(--color-primary-light);
-    color: var(--color-primary);
-    transform: scale(1.05);
+    border-color: var(--color-border);
+    background: var(--color-accent-2);
+    box-shadow: var(--shadow-sm);
+    transform: translate(-2px, -2px);
 }
 
 .option.selected .circle {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
-    border-color: var(--color-primary);
-    color: white;
-    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
-    transform: scale(1.1);
+    background: var(--color-accent-2);
+    /* Yellow */
+    border-color: var(--color-border);
+    color: var(--color-text-primary);
+    /* Dark text for contrast on yellow */
+    box-shadow: var(--shadow-md);
+    transform: translate(-3px, -3px);
 }
 
 .labels {
@@ -71,6 +78,11 @@
 }
 
 @media (min-width: 640px) {
+    .scale {
+        gap: var(--spacing-sm);
+        /* Restore larger gap on desktop */
+    }
+
     .circle {
         width: 56px;
         height: 56px;

@@ -27,32 +27,19 @@
 
 .track {
     width: 100%;
-    height: 8px;
-    background: var(--color-border-light);
+    height: 16px;
+    background: var(--color-background);
+    border: var(--border-width) solid var(--color-border);
     border-radius: var(--radius-full);
     overflow: hidden;
 }
 
 .fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
-    border-radius: var(--radius-full);
+    background: var(--color-accent);
+    border-right: 2px solid var(--color-border);
+    border-radius: 0;
     transition: width var(--transition-normal);
-    position: relative;
-}
-
-.fill::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(90deg,
-            transparent 0%,
-            rgba(255, 255, 255, 0.3) 50%,
-            transparent 100%);
-    animation: shimmer 2s infinite;
 }
 
 @keyframes shimmer {

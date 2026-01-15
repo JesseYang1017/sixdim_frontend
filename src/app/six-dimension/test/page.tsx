@@ -48,13 +48,7 @@ function TestContent() {
             [currentQuestion.id]: value,
         }));
 
-        // Auto-advance after a short delay
-        if (!isLastQuestion) {
-            setTimeout(() => {
-                setCurrentIndex((prev) => prev + 1);
-            }, 300);
-        }
-    }, [currentQuestion, isLastQuestion]);
+    }, [currentQuestion]);
 
     const handlePrevious = useCallback(() => {
         if (!isFirstQuestion) {

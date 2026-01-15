@@ -47,8 +47,8 @@ export function RadarChart({ dimensions }: RadarChartProps) {
                     <Tooltip
                         contentStyle={{
                             backgroundColor: 'var(--color-surface)',
-                            border: '1px solid var(--color-border)',
-                            borderRadius: 'var(--radius-md)',
+                            border: 'var(--border-width) solid var(--color-border)',
+                            borderRadius: 'var(--radius-lg)',
                             fontSize: 'var(--font-size-sm)',
                         }}
                         formatter={(value) => [`${value} 分`, '得分']}
@@ -58,7 +58,7 @@ export function RadarChart({ dimensions }: RadarChartProps) {
                         dataKey="score"
                         stroke="var(--color-primary)"
                         fill="var(--color-primary)"
-                        fillOpacity={0.3}
+                        fillOpacity={0.5}
                         strokeWidth={2}
                     />
                 </RechartsRadarChart>

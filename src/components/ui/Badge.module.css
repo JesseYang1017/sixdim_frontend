@@ -2,29 +2,30 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: var(--radius-full);
-    font-weight: 600;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
     white-space: nowrap;
-    background: color-mix(in srgb, var(--badge-color) 15%, transparent);
-    color: var(--badge-color);
-    border: 1px solid color-mix(in srgb, var(--badge-color) 30%, transparent);
+    background: white;
+    color: black;
+    border: var(--border-width) solid black;
+    box-shadow: 2px 2px 0px 0px black;
 }
 
-/* Level-specific colors */
+/* Level-specific colors (applied as background or border accents) */
 .excellent {
-    --badge-color: var(--color-excellent);
+    background: var(--color-excellent);
 }
 
 .good {
-    --badge-color: var(--color-good);
+    background: var(--color-good);
 }
 
 .needsImprovement {
-    --badge-color: var(--color-needs-improvement);
+    background: var(--color-needs-improvement);
 }
 
 .critical {
-    --badge-color: var(--color-critical);
+    background: var(--color-critical);
 }
 
 /* Sizes */

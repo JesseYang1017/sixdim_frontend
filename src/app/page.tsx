@@ -33,8 +33,8 @@ export default function HomePage() {
 
           <Card padding="lg" className={styles.comingSoon}>
             <div className={styles.cardContent}>
-              <div className={styles.cardIcon}>🧠</div>
-              <h2 className={styles.cardTitle}>MBTI 性格测试</h2>
+              <div className={styles.cardIcon}>🐱</div>
+              <h2 className={styles.cardTitle}>动物性格测试</h2>
               <p className={styles.cardDescription}>
                 探索你的性格类型，了解自己的人际交往风格、
                 职业倾向和成长方向。
