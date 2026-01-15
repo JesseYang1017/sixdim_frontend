@@ -15,7 +15,7 @@
 
 # next.js
 /.next/
-# /out/  # 注释掉以便 Gitee Pages 可以访问构建后的文件
+/out/
 
 # production
 /build
