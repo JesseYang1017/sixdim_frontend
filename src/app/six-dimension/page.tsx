@@ -24,7 +24,7 @@ export default function SixDimensionPage() {
                 </header>
 
                 <div className={styles.grid}>
-                    <Card padding="lg" className={styles.card}>
+                    {/* <Card padding="lg" className={styles.card}>
                         <div className={styles.cardContent}>
                             <div className={styles.cardIcon}>💘</div>
                             <h2 className={styles.cardTitle}>相亲六维测试</h2>
@@ -43,7 +43,7 @@ export default function SixDimensionPage() {
                                 </Button>
                             </Link>
                         </div>
-                    </Card>
+                    </Card> */}
 
                     <Card padding="lg" className={styles.card}>
                         <div className={styles.cardContent}>
