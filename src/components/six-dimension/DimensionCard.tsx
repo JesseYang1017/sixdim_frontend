@@ -10,6 +10,8 @@ export interface DimensionCardProps {
 }
 
 export function DimensionCard({ dimension, index }: DimensionCardProps) {
+    const { serviceRecommendations } = dimension.feedback;
+
     return (
         <Card className={styles.card} padding="md">
             <div className={styles.header}>
@@ -28,12 +30,12 @@ export function DimensionCard({ dimension, index }: DimensionCardProps) {
 
             <div className={styles.content}>
                 <div className={styles.section}>
-                    <h4 className={styles.sectionTitle}>特征分析</h4>
+                    <h4 className={styles.sectionTitle}>表现特点</h4>
                     <p className={styles.text}>{dimension.feedback.traits}</p>
                 </div>
 
                 <div className={styles.section}>
-                    <h4 className={styles.sectionTitle}>影响分析</h4>
+                    <h4 className={styles.sectionTitle}>对成功率影响</h4>
                     <p className={styles.text}>{dimension.feedback.impactAnalysis}</p>
                 </div>
 
@@ -47,7 +49,22 @@ export function DimensionCard({ dimension, index }: DimensionCardProps) {
                         ))}
                     </ul>
                 </div>
+
+                {/* 推荐服务 */}
+                {serviceRecommendations && serviceRecommendations.length > 0 && (
+                    <div className={styles.serviceSection}>
+                        <h4 className={styles.sectionTitle}>推荐服务</h4>
+                        <div className={styles.serviceTags}>
+                            {serviceRecommendations.map((service, i) => (
+                                <span key={i} className={styles.serviceTag}>
+                                    {service}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </div>
         </Card>
     );
 }
+

@@ -60,6 +60,14 @@ export interface DimensionLevels {
     levels: Record<Level, LevelFeedback>;
 }
 
+// Character profile for overall score
+export interface CharacterProfile {
+    keyword: string;
+    description: string;
+    status: string;
+    advice: string;
+}
+
 // Overall level feedback from evaluation_matrix.json
 export interface OverallLevelFeedback {
     level: Level;
@@ -69,6 +77,7 @@ export interface OverallLevelFeedback {
         max: number;
     };
     summary: string;
+    characterProfile?: CharacterProfile;
     coreStrengths?: string[];
     coreWeaknesses?: string;
     impactAnalysis: string;

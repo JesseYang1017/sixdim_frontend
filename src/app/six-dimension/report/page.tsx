@@ -7,6 +7,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { RadarChart } from '@/components/six-dimension/RadarChart';
 import { OverallScore } from '@/components/six-dimension/OverallScore';
+import { StrengthsWeaknesses } from '@/components/six-dimension/StrengthsWeaknesses';
 import { DimensionCard } from '@/components/six-dimension/DimensionCard';
 import { loadResults, clearResults } from '@/lib/six-dimension/scoring';
 import type { TestResults } from '@/lib/six-dimension/types';
@@ -76,7 +77,7 @@ export default function ReportPage() {
                 <section className={styles.section}>
                     <Card padding="lg">
                         <h2 className={styles.sectionTitle}>综合评估</h2>
-                        <OverallScore result={results.overall} />
+                        <OverallScore result={results.overall} testType={results.testType} />
                     </Card>
                 </section>
 
@@ -86,6 +87,11 @@ export default function ReportPage() {
                         <h2 className={styles.sectionTitle}>维度分布</h2>
                         <RadarChart dimensions={results.dimensions} />
                     </Card>
+                </section>
+
+                {/* Strengths & Weaknesses Section */}
+                <section className={styles.section}>
+                    <StrengthsWeaknesses dimensions={results.dimensions} />
                 </section>
 
                 {/* Dimension Cards Section */}

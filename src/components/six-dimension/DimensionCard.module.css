@@ -119,3 +119,27 @@
         transform: translateY(0);
     }
 }
+
+/* Service Recommendations Section */
+.serviceSection {
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-md);
+    border-top: 1px dashed var(--color-border-light);
+}
+
+.serviceTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.serviceTag {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: rgba(255, 193, 7, 0.15);
+    color: #d97706;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+}

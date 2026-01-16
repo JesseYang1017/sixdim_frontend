@@ -28,12 +28,12 @@
 
 /* Variants */
 .primary {
-    background: var(--color-primary);
+    background: #FF90E8;
     color: #ffffff;
 }
 
 .primary:hover:not(:disabled) {
-    background: var(--color-accent-2);
+    background: #FF6AD5;
     box-shadow: var(--shadow-md);
     transform: translate(-2px, -2px);
 }
