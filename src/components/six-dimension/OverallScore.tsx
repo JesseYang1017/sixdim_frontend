@@ -13,10 +13,10 @@ export function OverallScore({ result, testType }: OverallScoreProps) {
     const maxScore = 30;
     const percentage = Math.round((result.score / maxScore) * 100);
 
-    // Score color based on percentage
+    // Score color based on level
     const getScoreColorClass = () => {
-        if (percentage < 60) return styles.scoreFail;
-        if (percentage < 85) return styles.scoreWarning;
+        if (result.level === 'critical' || result.level === 'needsImprovement') return styles.scoreFail;
+        if (result.level === 'good') return styles.scoreGood;
         return styles.scoreExcellent;
     };
 
