@@ -20,12 +20,12 @@ export default function HomePage() {
                 <div className={styles.cardIcon}>💫</div>
                 <h2 className={styles.cardTitle}>六维测评</h2>
                 <p className={styles.cardDescription}>
-                  通过六个维度全面评估你的婚恋准备度或恋爱能力，
+                  通过六个维度全面评估你的婚恋准备度和恋爱能力，
                   获得专业的分析报告和改进建议。
                 </p>
                 <div className={styles.cardMeta}>
-                  <span className={styles.badge}>2种测试</span>
-                  <span className={styles.badge}>31-36题</span>
+                  <span className={styles.badge}>专业测评</span>
+                  <span className={styles.badge}>深度报告</span>
                 </div>
               </div>
             </Card>
