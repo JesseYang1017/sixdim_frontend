@@ -49,7 +49,9 @@ export function OverallScore({ result, testType }: OverallScoreProps) {
                     </div>
 
                     <div className={styles.profileBlock}>
-                        <h4 className={styles.profileLabel}>你的相亲/恋爱状态</h4>
+                        <h4 className={styles.profileLabel}>
+                            {testType === 'matchmaking' ? '你的相亲状态' : '你的恋爱状态'}
+                        </h4>
                         <p className={styles.profileText}>{characterProfile.status}</p>
                     </div>
 

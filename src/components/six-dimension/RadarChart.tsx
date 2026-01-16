@@ -30,7 +30,7 @@ export function RadarChart({ dimensions }: RadarChartProps) {
                 <RechartsRadarChart
                     cx="50%"
                     cy="50%"
-                    outerRadius="70%"
+                    outerRadius="60%"
                     data={data}
                 >
                     <PolarGrid stroke="var(--color-border)" />

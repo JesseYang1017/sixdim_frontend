@@ -9,7 +9,7 @@ export interface LikertScaleProps {
     disabled?: boolean;
 }
 
-const labels = ['非常不同意', '', '一般', '', '非常同意'];
+const labels = ['非常不同意', '不同意', '一般', '同意', '非常同意'];
 
 export function LikertScale({ value, onChange, disabled = false }: LikertScaleProps) {
     return (
