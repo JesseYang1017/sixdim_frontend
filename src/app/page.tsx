@@ -31,7 +31,7 @@ export default function HomePage() {
             </Card>
           </Link>
 
-          <a href="https://animalpersonality-production.up.railway.app/" target="_blank" rel="noopener noreferrer" className={styles.link}>
+          <a href="http://152.136.12.146/animalpersonality/" target="_blank" rel="noopener noreferrer" className={styles.link}>
             <Card clickable padding="lg">
               <div className={styles.cardContent}>
                 <div className={styles.cardIcon}>🐱</div>
